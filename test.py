@@ -10,7 +10,7 @@ async def main(pdf_path, params):
     return await recognizer.magick(pdf_path, params)
 
 
-results = asyncio.run(main("scans/84.jpg", {
+results = asyncio.run(main("images/23.jpg", {
     "type": "IDENTICAL",
     "segment": {"x": 1, "y": 6}
 }))
