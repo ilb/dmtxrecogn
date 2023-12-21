@@ -11,7 +11,7 @@ class DatamatrixRecognizer:
         self.resized_width = None
         self.zone_scale_x = 2
         self.zone_scale_y = 2
-        self.timeout = 500
+        self.timeout = 250
         self.count_x_segments = 3
         self.count_y_segments = 6
 
@@ -109,10 +109,10 @@ class DatamatrixRecognizer:
         return img[0:(height - count), :]
 
     def process_img(self, img, params):
-        prepared_img = self.prepare_img1(img, params)
+        prepared_img = self.prepare_img2(img, params)
         recognized_text = self.get_dmtx_text(prepared_img)
         if not len(recognized_text):
-            prepared_img = self.prepare_img2(img, params)
+            prepared_img = self.prepare_img1(img, params)
             recognized_text = self.get_dmtx_text(prepared_img)
         if not len(recognized_text):
             prepared_img = self.prepare_img3(img, params)
