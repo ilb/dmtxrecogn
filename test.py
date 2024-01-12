@@ -2,7 +2,8 @@ import asyncio
 import json
 import warnings
 
-from datamatrixRecognizer import DatamatrixRecognizer
+from dmtxrecogn.recognizer.datamatrixRecognizer import DatamatrixRecognizer
+
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
