@@ -29,7 +29,7 @@ setup(
     version="1.0.0",
     url="https://github.com/ilb/dmtxrecogn",
     description="Service for datamatrix recognition",
-    author="ssortia",
+    author="Alexander Kiyan",
     author_email="ssortia@gmail.com",
     packages=find_packages(exclude=["test.*", "test"]),
     python_requires=">=3.6",
