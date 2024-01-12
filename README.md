@@ -3,7 +3,7 @@
 ```sh
 pip install dmtxrecogn
 ```
-```
+```sh
 python /usr/bin/dmtxrecogn
 ```
 ### Разработка
@@ -18,6 +18,6 @@ python setup.py run
 ```
 
 Запуск скрипта для распознавания:
-```
+```sh
 python3 test.py
 ```
