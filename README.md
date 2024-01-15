@@ -2,22 +2,22 @@
 Для установки требуется Python 3.6+
 Сборка пакета:
 ```sh
-python setup.py sdist bdist_wheel
+python3 setup.py sdist bdist_wheel
 ```
 Установка:
 ```sh
-pip install dmtxrecogn
+pip install dmtxrecogn # or pipx install dmtxrecogn
 ```
 Запуск:
 ```sh
-python /usr/bin/dmtxrecogn
+python3 /usr/bin/dmtxrecogn
 ```
 Сервис будет доступен по http://127.0.0.1:9000/dmtxrecogn
 
 ---
 Если файла /usr/bin/dmtxrecogn не существует, то посмотреть куда python кладет собранные пакеты и использовать соответвующий путь:
 ```sh
-python -m site --user-base
+python3 -m site --user-base
 ```
 Возможно, в таком случае, еще потребуется указать путь к каталогу:
 ```sh
@@ -32,7 +32,7 @@ pip install .["test"]
 ```
 Запуск:
 ```sh
-python setup.py run
+python3 setup.py run
 ```
 
 Запуск скрипта для распознавания:
