@@ -5,12 +5,11 @@ app_dependencies = [
     "ilb-pycontext==2.2.2",
     "bottle==0.12.18",
     "gunicorn==20.0.4",
-    "debugpy==1.4.1",
-    "opencv-python==4.8.1.78",
+    "opencv-python==4.6.0.66",
     "pylibdmtx==0.1.10",
-    "numpy~=1.24.4",
+    "numpy~=1.19.5",
     "pdf2image~=1.16.3",
-
+    "debugpy==1.4.1",
 ]
 
 
