@@ -1,4 +1,10 @@
-### Установка и запуск:
+### Использование
+Пример curl-запроса:
+```sh
+curl -X POST https://avclick.ru/dmtxrecogn/api/recognize/   -H "Content-Type: multipart/form-data; boundary=WebAppBoundary"   -F 'params={"type": "IDENTICAL", "segment": {"x": 1, "y": 6}}'   -F 'files=@images/24.jpg'
+```
+
+### Установка и запуск
 Для установки требуется Python 3.6+
 Сборка пакета:
 ```sh
